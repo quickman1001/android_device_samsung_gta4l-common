@@ -18,7 +18,6 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
-vendor/etc/dolby/dax-default.xml
 vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -107,13 +106,11 @@ vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti

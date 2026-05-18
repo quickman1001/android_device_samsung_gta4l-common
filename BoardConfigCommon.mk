@@ -70,6 +70,9 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 # Display
 TARGET_SCREEN_DENSITY := 240
 
+# Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
