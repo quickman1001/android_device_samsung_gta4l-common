@@ -18,6 +18,9 @@
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Inherit from Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Enable updating of APEXes

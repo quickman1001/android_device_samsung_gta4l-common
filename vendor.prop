@@ -39,8 +39,6 @@ ro.vendor.audio.sdk.ssr=false
 ro.vendor.audio.wt=1
 ro.vendor.qspm.enable=true
 vendor.audio.adm.buffering.ms=2
-vendor.audio.dolby.ds2.enabled=false
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 
 vendor.audio.feature.afe_proxy.enable=true
