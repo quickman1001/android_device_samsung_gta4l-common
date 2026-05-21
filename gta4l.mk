@@ -20,7 +20,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from Dolby
 $(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
-
+#inherit from viper4fx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Enable updating of APEXes
