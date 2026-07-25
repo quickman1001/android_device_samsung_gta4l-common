@@ -100,6 +100,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/samsung/sm6115
+TARGET_KERNEL_CLANG_VERSION := r596125
 TARGET_KERNEL_CONFIG := \
     vendor/bengal-perf_defconfig \
     vendor/gta4l-common.config
@@ -198,6 +199,7 @@ BOARD_ROOT_EXTRA_SYMLINKS += /vendor/bt_firmware:/bt_firmware
 VENDOR_SECURITY_PATCH := 2024-06-01
 
 # SELinux
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
