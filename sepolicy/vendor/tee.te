@@ -1,1 +1,4 @@
 set_prop(tee, vendor_qseecomd_prop)
+
+# ION
+allow tee ion_device:chr_file { read open ioctl };

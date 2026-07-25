@@ -130,8 +130,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
 
 # Display
 PRODUCT_PACKAGES += \
@@ -162,6 +160,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery
+
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
