@@ -258,7 +258,10 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/samsung
+    hardware/samsung \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/google/pixel/usb
 
 # USB
 PRODUCT_PACKAGES += \
