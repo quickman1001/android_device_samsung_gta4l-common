@@ -199,7 +199,7 @@ BOARD_ROOT_EXTRA_SYMLINKS += /vendor/bt_firmware:/bt_firmware
 VENDOR_SECURITY_PATCH := 2024-06-01
 
 # SELinux
-include device/lineage/sepolicy/libion/sepolicy.mk
+include device/voltage/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
